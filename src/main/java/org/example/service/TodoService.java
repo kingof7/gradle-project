@@ -36,7 +36,7 @@ public class TodoService {
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
     }
 
-    public List<TodoEntity> serachAll() {
+    public List<TodoEntity> searchAll() {
         return this.todoRepository.findAll();
     }
 
